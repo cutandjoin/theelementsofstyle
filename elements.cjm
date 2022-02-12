@@ -1,0 +1,86 @@
+//18の原則
+//テキスト表示
+
+CJMP RESET
+CJMP vr=2
+CJM CUTN,tn=2,em=0,ev=2,cd=0,ae=1
+
+#
+mp3\elementsofstyle_01_strunk.mp3
+00:00:000 0:
+00:38:321 1:"01":USLT="1.Form the possessive singular of nouns with 's<br>名詞の所有格単数を'sで作る"
+00:44:277 0:
+02:21:348 1:"02":USLT="2.In a series of three or more terms with a single conjunction, use a comma after each term except the last<br>単独の接続詞の後に3つかそれ以上の語句が連続する場合、末尾を除く各語句の後にカンマを置く"
+02:32:868 0:
+03:27:333 1:"03":USLT="3.Enclose parenthetic expressions between commas<br>カンマの間に説明的な表現を挿入する"
+03:32:088 0:
+08:36:257 1:"04":USLT="4.Place a comma before and or but introducing an independent clause<br>独立した節を導入するandやbutの前にはカンマを置く"
+08:43:520 0:
+#
+mp3\elementsofstyle_02_strunk.mp3
+00:00:000 0:
+00:35:526 1:"05":USLT="5.Do not join independent clauses by a comma<br>独立した節をカンマで接続してはならない"
+00:39:967 0:
+03:34:439 1:"06":USLT="6.Do not break sentences in two<br>文を2つに分割してはならない"
+03:37:678 0:
+05:08:166 1:"07":USLT="7.A participial phrase at the beginning of a sentence must refer to the grammatical subject<br>文頭の分詞句は文法上の主語を受けていなければならない"
+05:16:708 0:
+07:15:226 1:"08":USLT="8.Divide words at line-ends, in accordance with their formation and pronunciation<br>語の構成と発音に従い、行末で語を分割する"
+07:23:428 0:
+#
+mp3\elementsofstyle_03_strunk.mp3
+00:00:000 0:
+00:38:086 1:"09":USLT="9.Make the paragraph the unit of composition: one paragraph to each topic<br>パラグラフを文章構成の単位にする: 各トピックにつき1パラグラフ"
+00:46:158 0:
+05:11:614 1:"10":USLT="10.As a rule, begin each paragraph with a topic sentence; end it in conformity with the beginning<br>原則として、パラグラフはトピックセンテンスで始める; 始まりと対応する形で終える"
+05:20:235 0:
+#
+mp3\elementsofstyle_04_strunk.mp3
+00:00:000 0:
+00:39:732 1:"11":USLT="11.Use the active voice<br>能動態を使う"
+00:42:318 0:
+05:22:847 1:"12":USLT="12.Put statements in positive form<br>肯定文で記述する"
+05:26:138 0:
+07:50:204 1:"13":USLT="13.Omit needless words<br>不要な語を省く"
+07:52:894 0:
+#
+mp3\elementsofstyle_05_strunk.mp3
+00:00:000 0:
+00:35:970 1:"14":USLT="14.Avoid a succession of loose sentences<br>締まりのない文が連続するのを避ける"
+00:40:176 0:
+03:21:874 1:"15":USLT="15.Express co-ordinate ideas in similar form<br>対等な複数の考えは同じ形で表現する"
+03:26:837 0:
+07:59:712 1:"16":USLT="16.Keep related words together<br>関係する語句は一緒にしておく"
+08:02:899 0:
+#
+mp3\elementsofstyle_06_strunk.mp3
+00:00:000 0:
+00:38:347 1:"17":USLT="17.In summaries, keep to one tense<br>サマリでは時制をひとつだけに"
+00:42:031 0:
+03:54:736 1:"18":USLT="18.Place the emphatic words of a sentence at the end<br>強調する語は一文の中で最後に置く"
+03:58:733 0:
+
+
+CJM VJOIN,em=1,ae=0,cd=1
+#
+01.mp3
+02.mp3
+03.mp3
+04.mp3
+05.mp3
+06.mp3
+07.mp3
+08.mp3
+09.mp3
+10.mp3
+11.mp3
+12.mp3
+13.mp3
+14.mp3
+15.mp3
+16.mp3
+17.mp3
+18.mp3
+
+CJM wm=1,wmx=30,wmy=30,wmw=820,wmh=150,wms=30
+CJM pl=1,po=2
