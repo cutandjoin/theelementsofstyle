@@ -2,9 +2,7 @@
 //テキスト表示
 
 CJMP RESET
-CJMP vr=2
-CJM CUTN,tn=2,em=0,ev=2,cd=0,ae=1
-
+CJM CUTN,tn=2,SEQUENCE(4,1),NAMEST("eos18")
 #
 mp3\elementsofstyle_01_strunk.mp3
 00:00:000 0:
@@ -60,27 +58,8 @@ mp3\elementsofstyle_06_strunk.mp3
 03:54:736 1:"18":USLT="18.Place the emphatic words of a sentence at the end<br>強調する語は一文の中で最後に置く"
 03:58:733 0:
 
-
-CJM VJOIN,em=1,ae=0,cd=1
-#
-01.mp3
-02.mp3
-03.mp3
-04.mp3
-05.mp3
-06.mp3
-07.mp3
-08.mp3
-09.mp3
-10.mp3
-11.mp3
-12.mp3
-13.mp3
-14.mp3
-15.mp3
-16.mp3
-17.mp3
-18.mp3
-
-CJM wm=1,wmx=30,wmy=30,wmw=820,wmh=150,wms=30
-CJM pl=1,po=2
+CJM SELECTALL,DECOMPRESS(0,1)
+CJM REBLOCK
+CJM UNFIXCUE
+CJM UNSELECTALL
+CJM METADATA(1,30,30,820,150,30),PLAYBACK("1",2)
