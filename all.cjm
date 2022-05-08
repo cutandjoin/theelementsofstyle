@@ -1,9 +1,7 @@
 //すべて
 
 CJMP RESET
-CJMP vr=2
-CJM CUTN,tn=2,em=0,ev=2,cd=0,ae=1
-
+CJM CUTN,tn=2,SEQUENCE(4,1),NAMEST("eos")
 #
 mp3\elementsofstyle_00_strunk.mp3
 00:00:000 0:
@@ -80,36 +78,8 @@ mp3\elementsofstyle_10_strunk.mp3
 00:29:231 1:"Words Often Misspelled_01"
 06:33:221 0:
 
-CJM VJOIN,em=1,ae=0,cd=1
-#
-Introductory_00.mp3
-Introductory_01.mp3
-Elementary Rules of Usage_00.mp3
-01.mp3
-02.mp3
-03.mp3
-04.mp3
-05.mp3
-06.mp3
-07.mp3
-08.mp3
-Elementary Principles of Composition_00.mp3
-09.mp3
-10.mp3
-11.mp3
-12.mp3
-13.mp3
-14.mp3
-15.mp3
-16.mp3
-17.mp3
-18.mp3
-A Few Matters of Form_00.mp3
-A Few Matters of Form_01.mp3
-Words and Expressions Commonly Misused_00.mp3
-Words and Expressions Commonly Misused_01.mp3
-Words and Expressions Commonly Misused_02.mp3
-Words Often Misspelled_00.mp3
-Words Often Misspelled_01.mp3
-
-CJM pl=1,po=2
+CJM SELECTALL,DECOMPRESS(0,1)
+CJM REBLOCK
+CJM UNFIXCUE
+CJM UNSELECTALL
+CJM PLAYBACK("1",2)
